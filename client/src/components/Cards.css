@@ -1,0 +1,114 @@
+/* Main container styling */
+.Main-Cards-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden; /* Added to keep animations contained within the view */
+}
+
+/* Wrapper for cards, ensuring proper spacing */
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  opacity: 0;  /* Start with wrapper invisible */
+  animation: fadeIn 1s ease-out forwards; /* Animation for fade-in effect */
+}
+
+/* Animation for fading in the cards wrapper */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for each card container, making them clickable */
+.card-container {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Prevent underlines on the entire card */
+  color: white; /* Ensuring text color is white for visibility */
+  transform: scale(0);  /* Start scaled down to zero */
+  animation: popIn 0.5s ease-out forwards; /* Animation for popping in */
+  animation-delay: 0.3s; /* Delay to allow wrapper to fade in first */
+}
+
+/* Animation for card pop in effect */
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1); /* Slightly overshoot the normal size */
+  }
+  100% {
+    transform: scale(1); /* Settle at normal size */
+  }
+}
+
+/* Hover effects for visual feedback on interaction */
+.card-container:hover, .card-container:focus {
+  transform: translateY(-5px) scale(1.05); /* Slight scale up on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Styling for the vertical line divider */
+.vertical-line {
+  width: 2px;
+  height: 100%;
+  background-color: #ddd;
+  margin: 0 15px;
+}
+
+/* Title styling within the card */
+.card-title {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Specific styles for employee card */
+.employee-container {
+  background: linear-gradient(to right, #34e89e 0%, #0f3443 100%);
+}
+
+/* Specific styles for parent card */
+.parent-card-container {
+  background: linear-gradient(to right, #f85032 0%, #e73827 100%);
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .cards-wrapper {
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    width: 80%;
+    height: 2px;
+    margin: 20px auto; /* Adjust margins for horizontal line */
+  }
+
+  .card-container {
+    width: 80%; /* Make cards wider on smaller screens */
+    margin: 10px auto; /* Centering cards */
+  }
+}

@@ -1,0 +1,36 @@
+/* SpecialSettings.css */
+
+.special-settings {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .special-settings h2 {
+    margin-bottom: 10px;
+  }
+  
+  .language-settings {
+    margin-bottom: 20px;
+  }
+  
+  .language-settings h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .language-settings ul {
+    padding-left: 20px;
+  }
+  
+  .language-settings li {
+    list-style-type: disc;
+  }
+  
+  .available-themes ul {
+    padding-left: 20px;
+  }
+  
+  .available-themes li {
+    list-style-type: disc;
+  }
+  

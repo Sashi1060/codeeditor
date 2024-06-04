@@ -1,0 +1,81 @@
+    /* Base container styling */
+    .all-register-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+    
+    /* Styling for the form itself */
+    .form-container {
+        width: 90%;
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        background: white;
+        animation: slideIn 0.5s ease-out forwards;
+    }
+    
+    /* Animation for form appearance */
+    @keyframes slideIn {
+        0% {
+        opacity: 0;
+        transform: translateY(20px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    
+    /* Styling for the form fields */
+    .form-field {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+    }
+    
+    .form-field:focus {
+        border-color: #0056b3;
+        outline: none;
+    }
+    
+    /* Styling for the form title */
+    .form-title {
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    /* Styling for the submit button */
+    .submit-button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .submit-button:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+        .form-container {
+        margin: 0 auto;
+        }
+    }
+    

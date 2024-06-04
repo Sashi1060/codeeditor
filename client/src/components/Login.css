@@ -1,0 +1,114 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in for the container */
+  }
+  
+  .login-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 650px;
+    animation: contentSlideUp 0.5s ease-out forwards; /* Slide up content animation */
+  }
+  
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+  }
+  
+  .vertical-line {
+    height: 250px;
+    width: 2px;
+    background-color: #ddd;
+    margin: 0 20px;
+  }
+  
+  .additional-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-control {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+    height: 50px; /* Adjusted height for uniformity */
+    align-items: center; /* Align text and icons vertically */
+    justify-content: center; /* Center content horizontally */
+    display: flex;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-google {
+    color: #444;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+  }
+  
+  .google-icon {
+    align-self: center; /* Align image vertically */
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .link {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .mb-2 {
+    margin-bottom: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .login-content {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+    .vertical-line {
+      height: 2px;
+      width: 50%; /* Horizontal line on smaller screens */
+      margin: 20px 0;
+    }
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes contentSlideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

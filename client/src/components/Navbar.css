@@ -1,0 +1,36 @@
+/* Navbar container styling */
+.nav-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#dedde82c, #52ef9458);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Brand container styling */
+.brand-container a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Links container styling */
+.links-container {
+    display: flex;
+    gap: 20px;
+}
+
+.links-container a {    
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.links-container a:hover {
+    color: #4CAF50; /* Light green color on hover */
+}

@@ -1,0 +1,24 @@
+/* src/coreComponents/styles/CodeOutput.css */
+
+.code-output {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .code-output h2 {
+    margin-top: 0;
+  }
+  
+  .code-output pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+  }
+  
+  .code-output .errors {
+    color: #ff5555;
+  }
+  

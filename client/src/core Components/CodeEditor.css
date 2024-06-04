@@ -1,0 +1,46 @@
+/* src/styles/CodeEditor.css */
+
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.editor-header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.editor-header button:hover {
+  background-color: #0056b3;
+}
+
+.editor-content {
+  display: flex;
+  flex: 1;
+  min-height: 0; /* Important for flexbox children */
+}
+
+.editor-content > .monaco-editor {
+  flex: 1; /* Take up remaining space */
+  width: 100%; /* Ensure full width */
+}

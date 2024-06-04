@@ -1,0 +1,66 @@
+/* Products.css */
+
+.products-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-header-for-products {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #007bff; /* Adjust color as needed */
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  .card-link {
+    text-decoration: none;
+  }
+  
+  .card-link:hover h2 {
+    text-decoration: underline;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

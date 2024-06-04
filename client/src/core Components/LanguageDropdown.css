@@ -1,0 +1,17 @@
+    /* LanguageDropdown.css */
+
+    .language-dropdown {
+        margin: 10px;
+    }
+    
+    .language-dropdown label {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .language-dropdown select {
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        background-color: white;
+    }
